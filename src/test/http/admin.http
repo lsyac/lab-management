@@ -1,0 +1,104 @@
+###添加用户并返回全部用户
+POST localhost:8080/api/admin/users
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE5NjAwODg2NzEwMjcyIiwibmFtZSI6IuWImOadvuS6jiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNTM5ODIxNywiZXhwIjoxNzM1NDg0NjE3fQ.jrK7oy4i96lhGOmguQ9Ogqb63GGnZvXBi7IODVGZDRU
+Content-Type: application/json
+
+{
+  "name": "隋枫贺",
+  "account": "user9",
+  "role": "user"
+}
+###删除用户并返回全部用户
+DELETE localhost:8080/api/admin/users/1322580955460632576
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE5NjAwODg2NzEwMjcyIiwibmFtZSI6IuWImOadvuS6jiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNTM5OTgxNSwiZXhwIjoxNzM1NDg2MjE1fQ.fkd1sg4_IQIswNbHh9-MEahsjoz7mkUg_EuVCA_3a_Q
+Content-Type: application/json
+
+{
+
+}
+###重置用户密码
+PUT localhost:8080/api/admin/users/user1/password
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE5NjAwODg2NzEwMjcyIiwibmFtZSI6IuWImOadvuS6jiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNTI5NTA0MCwiZXhwIjoxNzM1MzgxNDQwfQ.99m87ntZ7SrbobFirZlkbhKyiRD27AoU9chYuWYBsLg
+Content-Type: application/json
+
+{
+
+}
+###获取全部用户
+GET localhost:8080/api/admin/getUsers
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE5NjAwODg2NzEwMjcyIiwibmFtZSI6IuWImOadvuS6jiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNTI5NTA0MCwiZXhwIjoxNzM1MzgxNDQwfQ.99m87ntZ7SrbobFirZlkbhKyiRD27AoU9chYuWYBsLg
+Content-Type: application/json
+
+{
+
+}
+###添加实验室并返回全部实验室
+POST localhost:8080/api/admin/labs
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE5NjAwODg2NzEwMjcyIiwibmFtZSI6IuWImOadvuS6jiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNTM5ODczOCwiZXhwIjoxNzM1NDg1MTM4fQ.YDSXMBB9aMydFcSOg1PmahZ2-3QxPdfeHQN5TMgLSEA
+Content-Type: application/json
+
+{
+  "name": "907",
+  "manage": "7",
+  "quantity": 90,
+  "state": 1,
+  "description": "全是苹果电脑~~~"
+}
+###删除实验室并返回全部实验室
+DELETE localhost:8080/api/admin/labs/1322582448490250240
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE5NjAwODg2NzEwMjcyIiwibmFtZSI6IuWImOadvuS6jiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNTM5ODczOCwiZXhwIjoxNzM1NDg1MTM4fQ.YDSXMBB9aMydFcSOg1PmahZ2-3QxPdfeHQN5TMgLSEA
+Content-Type: application/json
+
+{
+
+}
+###发布公告并返回全部公告
+POST localhost:8080/api/admin/announcements
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE5NjAwODg2NzEwMjcyIiwibmFtZSI6IuWImOadvuS6jiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNTM5OTQyMSwiZXhwIjoxNzM1NDg1ODIxfQ.03i621LkLM6ylQEtnooQckKNjfo3A7MVP0vXUmn9Kh4
+Content-Type: application/json
+
+{
+  "content": "2024年12月29日丹青封楼！！！",
+  "title": "丹青封楼"
+}
+
+###获取全部公告
+GET localhost:8080/api/admin/announcements
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE5NjAwODg2NzEwMjcyIiwibmFtZSI6IuWImOadvuS6jiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNTI5NTA0MCwiZXhwIjoxNzM1MzgxNDQwfQ.99m87ntZ7SrbobFirZlkbhKyiRD27AoU9chYuWYBsLg
+Content-Type: application/json
+
+{
+
+}
+###删除公告并返回全部公告
+DELETE localhost:8080/api/admin/announcements/1322524266386993152
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE5NjAwODg2NzEwMjcyIiwibmFtZSI6IuWImOadvuS6jiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNTM5OTQyMSwiZXhwIjoxNzM1NDg1ODIxfQ.03i621LkLM6ylQEtnooQckKNjfo3A7MVP0vXUmn9Kh4
+Content-Type: application/json
+
+{
+
+}
+###更新实验室state并返回实验室信息
+PUT localhost:8080/api/admin/labs/state/1322583130555383808?state=1
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE5NjAwODg2NzEwMjcyIiwibmFtZSI6IuWImOadvuS6jiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNTM5OTQyMSwiZXhwIjoxNzM1NDg1ODIxfQ.03i621LkLM6ylQEtnooQckKNjfo3A7MVP0vXUmn9Kh4
+Content-Type: application/json
+
+{
+
+}
+###更新实验室description并返回实验室信息
+PUT localhost:8080/api/admin/labs/description/1322499902280663040?description="顶尖配置"
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE5NjAwODg2NzEwMjcyIiwibmFtZSI6IuWImOadvuS6jiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNTM5OTQyMSwiZXhwIjoxNzM1NDg1ODIxfQ.03i621LkLM6ylQEtnooQckKNjfo3A7MVP0vXUmn9Kh4
+Content-Type: application/json
+
+{
+
+}
+###更新实验室manage并返回实验室信息
+PUT localhost:8080/api/admin/labs/manage/1322583130555383808?manage=7
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE5NjAwODg2NzEwMjcyIiwibmFtZSI6IuWImOadvuS6jiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczNTM5OTQyMSwiZXhwIjoxNzM1NDg1ODIxfQ.03i621LkLM6ylQEtnooQckKNjfo3A7MVP0vXUmn9Kh4
+Content-Type: application/json
+
+{
+
+}

@@ -1,0 +1,166 @@
+###修改密码
+PATCH localhost:8080/api/user/password/123456
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoi5YiY5p2-5LqOIiwicm9sZSI6ImFkbWluIiwidWlkIjoiMTMxOTkxOTYwMDg4NjcxMDI3MiIsImlhdCI6MTczNTM4NzkyMCwiZXhwIjoxNzM1NDc0MzIwfQ.a9oKi6CDSjdpQCdvYcjZflthGrEv2jHzwhr3k3GgdDw
+Content-Type: application/json
+
+{
+
+}
+###获取全部公告
+GET localhost:8080/api/user/announcements
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQk8iLCJyb2xlIjoidXNlciIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJpYXQiOjE3MzUyOTI0MjEsImV4cCI6MTczNTM3ODgyMX0.Q9U7lCHLk5b2kJPfOTbSsjUkva4_Hy1l6DQqvD8ZIT8
+Content-Type: application/json
+
+{
+
+}
+###获取全部课程
+GET localhost:8080/api/user/courses
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsIm5hbWUiOiJCTyIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJpYXQiOjE3MzUyOTI2NDYsImV4cCI6MTczNTM3OTA0Nn0.glFrUoRt_oLQVJZVzJgb6C4K5yyq0Y-4sOnrwXVVLh4
+Content-Type: application/json
+
+{
+
+}
+###添加课程
+POST localhost:8080/api/user/addCourse
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoi5p2O55CwIiwidWlkIjoiMTMxOTkxNzEzNDg2NjY0NDk5MiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzM1Mzk2ODM5LCJleHAiOjE3MzU0ODMyMzl9.oVqm-bYL7cQrnyUCIeVaP4UhVuL6Z8F7AgoIrIE87gI
+Content-Type: application/json
+
+{
+  "name": "体系结构",
+  "quantity": 90,
+  "teacherId": "1319917134866644992",
+  "major": "软件工程",
+  "lesson": 64,
+  "classInfo": "2"
+}
+###获取全部实验室
+GET localhost:8080/api/user/labs
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsIm5hbWUiOiJCTyIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJpYXQiOjE3MzUyOTI2NDYsImV4cCI6MTczNTM3OTA0Nn0.glFrUoRt_oLQVJZVzJgb6C4K5yyq0Y-4sOnrwXVVLh4
+Content-Type: application/json
+
+{
+
+}
+###根据状态获取实验室
+GET localhost:8080/api/user/stateLabs/1
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsIm5hbWUiOiJCTyIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJpYXQiOjE3MzUyOTI2NDYsImV4cCI6MTczNTM3OTA0Nn0.glFrUoRt_oLQVJZVzJgb6C4K5yyq0Y-4sOnrwXVVLh4
+Content-Type: application/json
+
+{
+
+}
+###获取可用实验室
+GET localhost:8080/api/user/available-labs
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsIm5hbWUiOiJCTyIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJpYXQiOjE3MzUyOTI2NDYsImV4cCI6MTczNTM3OTA0Nn0.glFrUoRt_oLQVJZVzJgb6C4K5yyq0Y-4sOnrwXVVLh4
+Content-Type: application/json
+
+{
+
+}
+###预约实验室
+POST localhost:8080/api/user/reserve
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE3MTM0NDUxNDA4ODk2IiwibmFtZSI6IuadjuiOiSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzM1MzkwMTcyLCJleHAiOjE3MzU0NzY1NzJ9.i3FqTibS5QMNqL17GREMUAZTfRyYMM0EpqIJseTLyF0
+Content-Type: application/json
+
+{
+  "week": "2",
+  "dayOfWeek": "1",
+  "section": "1",
+  "labId": "1322499786278797312",
+  "courseName": "操作系统",
+  "courseId": "1322501344806666240"
+}
+###根据区间预约
+POST localhost:8080/api/user/reserve-range
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE3MTM0NDUxNDA4ODk2IiwibmFtZSI6IuadjuiOiSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzM1MzkwMTcyLCJleHAiOjE3MzU0NzY1NzJ9.i3FqTibS5QMNqL17GREMUAZTfRyYMM0EpqIJseTLyF0
+Content-Type: application/json
+
+{
+  "courseId": "1322501344806666240",
+  "courseName": "操作系统",
+  "labId": "1322499786278797312",
+  "startWeek": "3",
+  "endWeek": "6",
+  "dayOfWeek": "1",
+  "section": "1"
+}
+###临时预约
+POST localhost:8080/api/user/reserveTemporary
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsIm5hbWUiOiJCTyIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJpYXQiOjE3MzUzOTQzOTAsImV4cCI6MTczNTQ4MDc5MH0.hjkL02j4yhiieKaTC0WQ9vNY4HsxJrA9CIFrInh5ZT8
+Content-Type: application/json
+
+{
+  "week": "18",
+  "dayOfWeek": "1",
+  "section": "1",
+  "labId": "1322499786278797312",
+  "courseName": "temp",
+  "courseId": "12046159231"
+}
+###根据实验室id查询预约记录
+GET localhost:8080/api/user/lab/6/reservations
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsIm5hbWUiOiJCTyIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJpYXQiOjE3MzUyOTI2NDYsImV4cCI6MTczNTM3OTA0Nn0.glFrUoRt_oLQVJZVzJgb6C4K5yyq0Y-4sOnrwXVVLh4
+Content-Type: application/json
+
+{
+
+}
+###根据teacherId查询预约记录
+GET localhost:8080/api/user/teacher/reservations
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE3MTMzOTQ4MDkyNDE2IiwibmFtZSI6IkJPIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MzUzNzA5NDYsImV4cCI6MTczNTQ1NzM0Nn0.vuNy-L6-FMdkOw8pClsXZtQhvicu2kvSQyRKcK5WTDc
+Content-Type: application/json
+
+{
+
+}
+###取消预约并返回新的预约记录
+DELETE localhost:8080/api/user/reservation/1322547545430130688
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE3MTM0NDUxNDA4ODk2IiwibmFtZSI6IuadjuiOiSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzM1Mzk3NDYyLCJleHAiOjE3MzU0ODM4NjJ9.JVnS8wkBop2dGamCW9-kwTVVunzm6Ubbxy8UFnreToY
+Content-Type: application/json
+
+{
+
+}
+
+###根据周和日查询可用教室
+GET localhost:8080/api/user/free-slots/1/2
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsIm5hbWUiOiJCTyIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJpYXQiOjE3MzUyOTI2NDYsImV4cCI6MTczNTM3OTA0Nn0.glFrUoRt_oLQVJZVzJgb6C4K5yyq0Y-4sOnrwXVVLh4
+Content-Type: application/json
+
+{
+
+}
+###根据周，日，节次查询可用教室
+GET localhost:8080/api/user/free-slots/1/2/1
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsIm5hbWUiOiJCTyIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJpYXQiOjE3MzUyOTI2NDYsImV4cCI6MTczNTM3OTA0Nn0.glFrUoRt_oLQVJZVzJgb6C4K5yyq0Y-4sOnrwXVVLh4
+Content-Type: application/json
+
+{
+
+}
+
+###批量取消预约
+DELETE localhost:8080/api/user/reservations
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsIm5hbWUiOiLmnY7ojokiLCJ1aWQiOiIxMzE5OTE3MTM0NDUxNDA4ODk2IiwiaWF0IjoxNzM1Mzk3NjcxLCJleHAiOjE3MzU0ODQwNzF9.HHZ3_1Kf8dg0n-ObYCc32Kzvx_Qj2R5p6dDo5DN1qIE
+Content-Type: application/json
+
+[
+  "1322547660236619776",
+  "1322547661884981248"
+]
+
+###根据courseId获取预约信息
+GET localhost:8080/api/user/teacher/reservations/1
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE3MTMzOTQ4MDkyNDE2Iiwicm9sZSI6InVzZXIiLCJuYW1lIjoiQk8iLCJpYXQiOjE3MzUzNjc5NjQsImV4cCI6MTczNTQ1NDM2NH0.RMPjl_HbCNXGWWYhsnSbs0j7WE5pAz1XUzX9rsBilAU
+Content-Type: application/json
+
+{
+
+}
+
+
+
+
+

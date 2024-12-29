@@ -1,0 +1,39 @@
+POST localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "account": "user1",
+  "password": "123456"
+}
+###
+POST localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "account": "user6",
+  "password": "user6"
+}
+###
+POST localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "account": "admin",
+  "password": "lsy021827"
+}
+###
+POST localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "account": "user7",
+  "password": "user7"
+}
+###
+POST localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "account": "user5",
+  "password": "user5"
+}
