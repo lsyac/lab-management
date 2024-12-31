@@ -33,7 +33,6 @@ public class LoginController {
         String token = jwtComponent.encode(Map.of("uid", userR.getId(),"role", userR.getRole(),"name",userR.getName()));
         response.setHeader("token", token);
         response.setHeader("role", userR.getRole());
-        response.setHeader("name", userR.getName());
         return ResultVO.success(userR);
     }
 }

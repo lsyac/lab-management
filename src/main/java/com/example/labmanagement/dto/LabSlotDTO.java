@@ -16,4 +16,6 @@ public class LabSlotDTO {
     private int week;
     private int dayOfWeek;
     private int section;
+    private int quantity;
+    private String description;
 }

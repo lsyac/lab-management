@@ -23,7 +23,7 @@ public class UserController {
     private final UserService userService;
     private final TeacherService teacherService;
     private final LabReservationService labReservationService;
-    @Operation(summary = "更改用户密码")
+    @Operation(summary = "更改用户密码哈哈")
     @PatchMapping("password/{password}")
     public ResultVO patchPassword(@RequestAttribute("uid") String uid,@PathVariable String password) {
         try {
@@ -70,7 +70,7 @@ public class UserController {
             return ResultVO.error(400,"获取课程失败："+e.getMessage());
         }
     }
-    @Operation(summary = "添加课程并返回老师的所有课程")
+    @Operation(summary = "添加课程并返回全新的老师的所有课程")
     @PostMapping("addCourse")
     public ResultVO addCourse(@RequestBody Course course,@RequestAttribute("uid") String uid) {
         try {
@@ -106,7 +106,7 @@ public class UserController {
         }
         return ResultVO.success(labs);
     }
-    @Operation(summary = "预约实验室并返回老师的全部预约记录")
+    @Operation(summary = "预约实验室并返回全新的老师的全部预约记录")
     @PostMapping("reserve")
     public ResultVO createReservation(@RequestBody LabReservationRequest request, @RequestAttribute("uid") String uid,@RequestAttribute("name") String name) {
         return labReservationService.createReservation(request, uid, name);

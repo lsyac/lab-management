@@ -1,6 +1,6 @@
 ###修改密码
 PATCH localhost:8080/api/user/password/123456
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoi5YiY5p2-5LqOIiwicm9sZSI6ImFkbWluIiwidWlkIjoiMTMxOTkxOTYwMDg4NjcxMDI3MiIsImlhdCI6MTczNTM4NzkyMCwiZXhwIjoxNzM1NDc0MzIwfQ.a9oKi6CDSjdpQCdvYcjZflthGrEv2jHzwhr3k3GgdDw
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJuYW1lIjoi5YiY5p2-5LqOIiwidWlkIjoiMTMxOTkxOTYwMDg4NjcxMDI3MiIsImlhdCI6MTczNTU0NDY4OCwiZXhwIjoxNzM1NjMxMDg4fQ.npo4Tl1r6u3xAMbZoWmmGajCLsomv0CAq5T2r796thM
 Content-Type: application/json
 
 {
@@ -16,7 +16,7 @@ Content-Type: application/json
 }
 ###获取全部课程
 GET localhost:8080/api/user/courses
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsIm5hbWUiOiJCTyIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJpYXQiOjE3MzUyOTI2NDYsImV4cCI6MTczNTM3OTA0Nn0.glFrUoRt_oLQVJZVzJgb6C4K5yyq0Y-4sOnrwXVVLh4
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsIm5hbWUiOiJCTyIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJpYXQiOjE3MzU1Njk3OTgsImV4cCI6MTczNTY1NjE5OH0._waayrB1rR_QqS25egcIK7Y7FUZD7FCaN2ExUrJ_3fM
 Content-Type: application/json
 
 {
@@ -37,7 +37,7 @@ Content-Type: application/json
 }
 ###获取全部实验室
 GET localhost:8080/api/user/labs
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsIm5hbWUiOiJCTyIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJpYXQiOjE3MzUyOTI2NDYsImV4cCI6MTczNTM3OTA0Nn0.glFrUoRt_oLQVJZVzJgb6C4K5yyq0Y-4sOnrwXVVLh4
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsIm5hbWUiOiJCTyIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJpYXQiOjE3MzU1Njk3OTgsImV4cCI6MTczNTY1NjE5OH0._waayrB1rR_QqS25egcIK7Y7FUZD7FCaN2ExUrJ_3fM
 Content-Type: application/json
 
 {
@@ -65,12 +65,12 @@ token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMzE5OTE3MTM0NDUxNDA4ODk2
 Content-Type: application/json
 
 {
-  "week": "2",
+  "week": "13",
   "dayOfWeek": "1",
-  "section": "1",
-  "labId": "1322499786278797312",
-  "courseName": "操作系统",
-  "courseId": "1322501344806666240"
+  "section": "4",
+  "labId": "1322499629705428992",
+  "courseName": "框架",
+  "courseId": "1322498575580364800"
 }
 ###根据区间预约
 POST localhost:8080/api/user/reserve-range
@@ -125,16 +125,16 @@ Content-Type: application/json
 }
 
 ###根据周和日查询可用教室
-GET localhost:8080/api/user/free-slots/1/2
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsIm5hbWUiOiJCTyIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJpYXQiOjE3MzUyOTI2NDYsImV4cCI6MTczNTM3OTA0Nn0.glFrUoRt_oLQVJZVzJgb6C4K5yyq0Y-4sOnrwXVVLh4
+GET localhost:8080/api/user/free-slots/1/1
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJuYW1lIjoiQk8iLCJpYXQiOjE3MzU1NDAxNDIsImV4cCI6MTczNTYyNjU0Mn0.jWXoDEjqVwyP_MXvFEetH0nb9QzoYpmB1azKkaj--qQ
 Content-Type: application/json
 
 {
 
 }
 ###根据周，日，节次查询可用教室
-GET localhost:8080/api/user/free-slots/1/2/1
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsIm5hbWUiOiJCTyIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJpYXQiOjE3MzUyOTI2NDYsImV4cCI6MTczNTM3OTA0Nn0.glFrUoRt_oLQVJZVzJgb6C4K5yyq0Y-4sOnrwXVVLh4
+GET localhost:8080/api/user/free-slots/32/1/3
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidXNlciIsInVpZCI6IjEzMTk5MTcxMzM5NDgwOTI0MTYiLCJuYW1lIjoiQk8iLCJpYXQiOjE3MzU1NDAxNDIsImV4cCI6MTczNTYyNjU0Mn0.jWXoDEjqVwyP_MXvFEetH0nb9QzoYpmB1azKkaj--qQ
 Content-Type: application/json
 
 {

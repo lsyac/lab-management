@@ -3,7 +3,7 @@ Content-Type: application/json
 
 {
   "account": "user1",
-  "password": "123456"
+  "password": "user1"
 }
 ###
 POST localhost:8080/api/login
