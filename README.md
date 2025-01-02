@@ -1,6 +1,7 @@
 # Lab-Management
 
 实验室预约管理系统，本系统用户分为两种：管理员，教师。以下针对两种用户分别描述其功能需求。
+前端项目网址：https://github.com/istomoyo/Laboratory-Reservation-System
 
 ## 1.管理员功能需求描述
 
